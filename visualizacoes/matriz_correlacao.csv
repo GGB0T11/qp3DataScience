@@ -1,0 +1,5 @@
+,year,rating,meta_score,release_date
+year,1.0,0.01,-0.11,1.0
+rating,0.01,1.0,0.71,-0.04
+meta_score,-0.11,0.71,1.0,-0.17
+release_date,1.0,-0.04,-0.17,1.0
