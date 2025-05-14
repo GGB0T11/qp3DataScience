@@ -1,0 +1,170 @@
+============================================================
+ANÁLISE EXPLORATÓRIA BÁSICA DE DADOS
+============================================================
+
+Arquivo 'imdb_filmes.csv' carregado com sucesso!
+
+============================================================
+INFORMAÇÕES BÁSICAS DO DATASET
+============================================================
+
+Tamanho do dataset: 63249 linhas e 24 colunas
+
+Primeiras 5 linhas do dataset:
+          id  ...    languages
+0  tt0073195  ...  ['English']
+1  tt0073629  ...  ['English']
+2  tt0073486  ...  ['English']
+3  tt0072890  ...  ['English']
+4  tt0073692  ...  ['English']
+
+[5 rows x 24 columns]
+
+Tipos de dados de cada coluna:
+id                        object
+title                     object
+year                       int64
+duration                  object
+MPA                       object
+rating                   float64
+votes                     object
+meta_score               float64
+description               object
+Movie_Link                object
+writers                   object
+directors                 object
+stars                     object
+budget                    object
+opening_weekend_gross     object
+gross_worldwide           object
+gross_us_canada           object
+release_date             float64
+countries_origin          object
+filming_locations         object
+production_companies      object
+awards_content            object
+genres                    object
+languages                 object
+dtype: object
+
+Valores ausentes por coluna:
+duration                  2075
+MPA                      22022
+rating                    4068
+votes                     4068
+meta_score               47716
+description               2360
+writers                    269
+directors                   51
+stars                      344
+budget                   47890
+opening_weekend_gross    46412
+gross_worldwide          42527
+gross_us_canada          43705
+release_date              8400
+countries_origin            99
+filming_locations        16854
+production_companies      1973
+awards_content           36181
+genres                     787
+languages                  330
+dtype: int64
+
+============================================================
+ESTATÍSTICAS DESCRITIVAS
+============================================================
+
+Estatísticas para colunas numéricas:
+           year    rating  meta_score  release_date
+count  63249.00  59181.00    15533.00      54849.00
+mean    1972.69      6.16       59.07       1966.43
+std       30.54      1.07       17.40         27.70
+min     1920.00      1.00        1.00       1920.00
+25%     1946.00      5.50       47.00       1943.00
+50%     1973.00      6.30       61.00       1966.00
+75%     1999.00      6.90       72.00       1989.00
+max     2025.00     10.00      100.00       2024.00
+Estatísticas salvas em visualizacoes/estatisticas_numericas.csv
+
+Contagem das principais categorias:
+
+Coluna 'id' tem 63249 valores únicos (primeiros 5):
+id
+tt0155726    1
+tt0094837    1
+tt0251997    1
+tt0094060    1
+tt0094833    1
+Name: count, dtype: int64
+
+Coluna 'title' tem 58120 valores únicos (primeiros 5):
+title
+Carmen                  10
+The Three Musketeers    10
+Mother                   9
+Hamlet                   9
+Les Misérables           8
+Name: count, dtype: int64
+
+Coluna 'duration' tem 304 valores únicos (primeiros 5):
+duration
+1h 30m    2751
+1h 35m    1914
+1h 40m    1639
+1h 33m    1514
+1h 32m    1513
+Name: count, dtype: int64
+
+============================================================
+CRIANDO VISUALIZAÇÕES
+============================================================
+Todos os gráficos serão salvos na pasta 'visualizacoes'
+
+Criando histogramas para variáveis numéricas...
+✓ Histogramas criados com sucesso!
+
+Criando gráficos de barras para variáveis categóricas...
+✓ Gráficos de barras criados com sucesso!
+
+Criando matriz de correlação...
+✓ Matriz de correlação criada com sucesso!
+
+Correlações mais fortes:
+• year e release_date: 1.00
+• rating e meta_score: 0.71
+• meta_score e release_date: -0.17
+• year e meta_score: -0.11
+• rating e release_date: -0.04
+
+Criando gráfico de dispersão para as variáveis mais correlacionadas...
+✓ Gráfico de dispersão criado com sucesso!
+
+Criando boxplots para variáveis numéricas...
+✓ Boxplots criados com sucesso!
+
+============================================================
+RESUMO DA ANÁLISE
+============================================================
+
+Dataset analisado: imdb_filmes.csv
+Tamanho: 63249 linhas x 24 colunas
+Colunas numéricas: 4
+Colunas categóricas: 20
+Valores ausentes: Sim
+
+Arquivos gerados:
+- Estatísticas numéricas (CSV)
+- Histogramas
+- Gráficos de barras
+- Matriz de correlação
+- Gráfico de dispersão
+- Boxplots
+- Gráficos comparativos
+
+Todos os arquivos foram salvos na pasta 'visualizacoes'
+
+
+============================================================
+ANÁLISE CONCLUÍDA!
+============================================================
+Você pode usar estas visualizações no seu relatório do projeto.
