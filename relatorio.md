@@ -33,21 +33,19 @@
 Estudar este tema nos ajuda a:
 - Entender melhor como os filmes impactam a cultura socio-mundial
 - Entender como esses filmes são feitos e pensados em diferentes épocas
-- ...
 
 ### Nossas 5 Perguntas Específicas
 1. Quais são os melhores filmes do mundo?
-2. Os melhores filmes são de uma época um tem um gênero espeçifico?
-
----
-
-# Não corrigi daqui pra baixo
-
-3. A diferença entre ricos e pobres aumentou ou diminuiu desde 2012?
-4. Qual região do Brasil melhorou mais nos últimos anos?
-5. Os estados com melhor educação têm menos desigualdade?
+2. Existe alguma década ou ano com mais filmes bem avaliados?
+3. Quais são os filmes com maior avaliação ao longo das décadas?
+4. Como o orçamento dos filmes evoluiu ao longo do tempo?
+5. Quais são os gêneros mais populares em cada década?
 
 ## 🔍 3. O Que Descobrimos
+
+---
+# Não alterei daqui pra baixo
+---
 
 ### Fatos Interessantes
 1. "Brasília é a cidade mais rica, mas também uma das mais desiguais"
