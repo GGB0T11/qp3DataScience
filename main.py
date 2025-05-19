@@ -10,18 +10,31 @@ def calc_nulls(df):
 
 def films_per_decade(df):
     # Criar intervalos de 10 anos
-    bins = range(df['year'].min(), df['year'].max() + 5, 5)
-    labels = [f'{start}-{start+4}' for start in bins[:-1]]
-    
+    last_year = df["year"].max()
+    bins = list(range(df["year"].min(), df["year"].max(), 10)) + [last_year]
+    labels = [f"{start}-{start+9}" if start+9 < last_year else f"{start}-{last_year}" for start in bins[:-1]]
+
     # Agrupar por década
-    df['decade'] = pd.cut(df['year'], bins=bins, labels=labels, right=False)
-    count = df['decade'].value_counts().sort_index()
-    
+    df["decade"] = pd.cut(df["year"], bins=bins, labels=labels, right=False)
+    count = df["decade"].value_counts().sort_index()
     return count.reset_index()
+
+def plot_bar(df):
+    sns.set_theme(style="whitegrid")
+    plt.figsize=(12, 6)
+    ax = sns.barplot(data=df, x="decade", y="count", hue="decade", palette="Blues_d")
+    for i, row in df.iterrows():
+        ax.text(i, row["count"] + 50, row["count"], ha="center", va="bottom", fontsize=9)
+    ax.set_title("Quantidade de filmes por Década", fontsize=14)
+    ax.set_xlabel("Década")
+    ax.set_ylabel("Quantidade de Filmes")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig("graficos/fpd.png")        
+    return
 
 # Lendo o dataset
 df = pd.read_csv("imdb_filmes.csv")
 
-fpm = films_per_decade(df)
-print(fpm)
-# fpm.to_csv("analises_raw/fpm.csv", index=False)
+fpd = films_per_decade(df)
+plot_bar(fpd)
