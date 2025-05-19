@@ -56,35 +56,35 @@ Estudar este tema nos ajuda a:
    - variação da duração dos filmes por década
 
 ### Problemas Encontrados
-- Colocar aqui se encontrarmos
+- Colunas: **opening_weekend_gross**, **gross_us_canada**, **gross_us_canada** e **meta_score** tinham **67%** ou mais de dados ausentes, por isso as respectivas colunas não foram analizadas
 
 ### 🤖 4. Nossos Algoritmos
 
 ### Primeiro Algoritmo: Agrupamento de Gêneros com K-Means
-**O que faz:** Agrupa os gêneros de filmes em grupos parecidos com base em variáveis como nota média (rating), duração média e quantidade de votos.
-**Por que usamos:** Para entender melhor quais gêneros são mais populares, bem avaliados ou longos. Isso nos ajuda a ver padrões de produção e preferências ao longo do tempo.
-**Exemplo de resultado:** Gêneros como Ação e Aventura ficaram no mesmo grupo por serem populares, enquanto Documentário e Drama foram agrupados juntos por terem duração maior e avaliação mais alta.
+**O que faz:** Agrupa os gêneros de filmes em grupos parecidos com base em variáveis como nota média (rating), duração média e quantidade de votos
+**Por que usamos:** Para entender melhor quais gêneros são mais populares, bem avaliados ou longos. Isso nos ajuda a ver padrões de produção e preferências ao longo do tempo
+**Exemplo de resultado:** Gêneros como Ação e Aventura ficaram no mesmo grupo por serem populares, enquanto Documentário e Drama foram agrupados juntos por terem duração maior e avaliação mais alta
 
 ### Segundo Algoritmo: Cálculo de Duração Média com Pandas
-**O que faz:** Calcula a média da duração dos filmes a cada década usando a biblioteca pandas.
-**Por que usamos:** Para descobrir como o tempo dos filmes foi mudando ao longo dos anos.
-**Exemplo de resultado:** Os filmes das décadas de 1980 e 2000 tinham, em média, maior duração. Já nos anos mais recentes (2010 em diante), a duração média diminuiu.
+**O que faz:** Calcula a média da duração dos filmes a cada década usando a biblioteca pandas
+**Por que usamos:** Para descobrir como o tempo dos filmes foi mudando ao longo dos anos
+**Exemplo de resultado:** Os filmes das décadas de 1980 e 2000 tinham, em média, maior duração. Já nos anos mais recentes (2010 em diante), a duração média diminuiu
 
 
 ## 📋 5. Próximos Passos
-1. Aprofundar a análise de gêneros para entender melhor a relação entre popularidade, avaliação e duração dos filmes ao longo do tempo.
-2. Comparar a avaliação do público (rating) com a avaliação da crítica (meta_score), identificando possíveis divergências por década ou gênero.
-3. Analisar a representatividade geográfica, verificando como países de origem e idiomas influenciam na produção de filmes mais bem avaliados.
-4. Estudar a evolução dos orçamentos e lucros, ajustando os valores pela inflação para entender as mudanças reais nos investimentos da indústria do cinema.
-5. Aplicar algoritmos de agrupamento (como K-Means) para identificar perfis de filmes com base em múltiplas variáveis (gênero, duração, orçamento, nota, etc.).
+1. Aprofundar a análise de gêneros para entender melhor a relação entre popularidade, avaliação e duração dos filmes ao longo do tempo
+2. Comparar a avaliação do público (rating) com a avaliação da crítica (meta_score), identificando possíveis divergências por década ou gênero
+3. Analisar a representatividade geográfica, verificando como países de origem e idiomas influenciam na produção de filmes mais bem avaliados
+4. Estudar a evolução dos orçamentos e lucros, ajustando os valores pela inflação para entender as mudanças reais nos investimentos da indústria do cinema
+5. Aplicar algoritmos de agrupamento (como K-Means) para identificar perfis de filmes com base em múltiplas variáveis (gênero, duração, orçamento, nota, etc.)
 
 
 ## 👥 6. O Que Cada Um Fez
-- **Gustavo Freitas:** 
-- **José Pedro Bueno:** 
-- **Sofia Vicente:**
-- **Acauã Barros:** 
-- **Arthur Alemar:**
+- **Gustavo Freitas:** Carregou o time nas costas
+- **José Pedro Bueno:** Relatorio
+- **Sofia Vicente:** Nada
+- **Acauã Barros:** Nada
+- **Orlando Alguma Coisa:** Nada
 ---
 **Data de Entrega:** 05/05/2025
 **Link do Notebook:** [Cole aqui o link do Google Colab]
