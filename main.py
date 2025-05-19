@@ -30,7 +30,7 @@ def plot_bar(df):
     ax.set_ylabel("Quantidade de Filmes")
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig("graficos/fpd.png")        
+    plt.savefig("graficos/FilmesDecada.png")        
     return
 
 # Lendo o dataset
