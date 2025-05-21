@@ -49,11 +49,10 @@ Estudar este tema nos ajuda a:
 3. Os filmes com maior nota média tendem a ter diretores premiados e orçamentos maiores.
 
 ### Nossos Gráficos
-**Exemplo de Gráfico:** Temos que ver os gráficos
+**Gráfico:** Gráfico de Quantidade de Filmes X Décadas
+![Gráfico de Quantidade de Filmes X Décadas](FimesDecada.png)
 
-- O que mostra: Conferir depois
-   - Gêneros mais assistidos por década
-   - variação da duração dos filmes por década
+- O que mostra: Quantidades de filmes por década
 
 ### Problemas Encontrados
 - Colunas: **opening_weekend_gross**, **gross_us_canada**, **gross_us_canada** e **meta_score** tinham **67%** ou mais de dados ausentes, por isso as respectivas colunas não foram analizadas
@@ -65,11 +64,10 @@ Estudar este tema nos ajuda a:
 **Por que usamos:** Para entender melhor quais gêneros são mais populares, bem avaliados ou longos. Isso nos ajuda a ver padrões de produção e preferências ao longo do tempo
 **Exemplo de resultado:** Gêneros como Ação e Aventura ficaram no mesmo grupo por serem populares, enquanto Documentário e Drama foram agrupados juntos por terem duração maior e avaliação mais alta
 
-### Segundo Algoritmo: Cálculo de Duração Média com Pandas
-**O que faz:** Calcula a média da duração dos filmes a cada década usando a biblioteca pandas
-**Por que usamos:** Para descobrir como o tempo dos filmes foi mudando ao longo dos anos
-**Exemplo de resultado:** Os filmes das décadas de 1980 e 2000 tinham, em média, maior duração. Já nos anos mais recentes (2010 em diante), a duração média diminuiu
-
+### Segundo Algoritmo: Cálculo de Quantidade de filmes com Pandas
+**O que faz:** Calcula a quantidade de filmes a cada década usando a biblioteca pandas
+**Por que usamos:** Para descobrir se há algum padrão na quantidade de filmes por década
+**Exemplo de resultado:** As décadas tem uma quantidade de filmes que varia de 5799 a 6002
 
 ## 📋 5. Próximos Passos
 1. Aprofundar a análise de gêneros para entender melhor a relação entre popularidade, avaliação e duração dos filmes ao longo do tempo
