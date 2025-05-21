@@ -50,7 +50,7 @@ Estudar este tema nos ajuda a:
 
 ### Nossos Gráficos
 **Gráfico:** Gráfico de Quantidade de Filmes X Décadas
-![Gráfico de Quantidade de Filmes X Décadas](FimesDecada.png)
+![Gráfico de Quantidade de Filmes X Décadas](FilmesDecada.png)
 
 - O que mostra: Quantidades de filmes por década
 
