@@ -11,9 +11,9 @@ def calc_nulls(df, export: bool):
     })
     if not export:
         nulls.to_csv("csvs/Nulos.csv", index=False)
-        return
     return nulls
 
+# Função para organizar a quantidade de filmes por decada
 def films_per_decade(df, export: bool):
     # Criando intervalos de 10 anos
     last_year = df["year"].max()
@@ -24,7 +24,6 @@ def films_per_decade(df, export: bool):
     count = df["decade"].value_counts().sort_index().reset_index()
     if export:
         count.to_csv("csvs/FilmesPorDecada.csv", index=False)
-        return
     return count
 
 def plot_bar(df):
@@ -47,6 +46,9 @@ if __name__ == "__main__":
 
     # Lendo o dataset
     df = pd.read_csv("imdb_filmes.csv")
+    df.drop(columns=["meta_score", "budget", "opening_weekend_gross", 
+                     "gross_worldwide", "gross_us_canada"], inplace=True)
     
+    df = df.fillna(df.mean(numeric_only=True))
     calc_nulls(df, export=True)
     films_per_decade(df, export=True)
