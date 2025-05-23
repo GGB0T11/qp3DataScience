@@ -64,7 +64,7 @@ Estudar este tema nos ajuda a:
 **Por que usamos:** Para entender melhor quais gêneros são mais populares, bem avaliados ou longos. Isso nos ajuda a ver padrões de produção e preferências ao longo do tempo
 **Exemplo de resultado:** Gêneros como Ação e Aventura ficaram no mesmo grupo por serem populares, enquanto Documentário e Drama foram agrupados juntos por terem duração maior e avaliação mais alta
 
-### Segundo Algoritmo: Cálculo de Quantidade de filmes com Pandas
+### Segundo Algoritmo: Recomendação de filmes semelhantes com K-Nearest Neighbors
 **O que faz:** Calcula a quantidade de filmes a cada década usando a biblioteca pandas
 **Por que usamos:** Para descobrir se há algum padrão na quantidade de filmes por década
 **Exemplo de resultado:** As décadas tem uma quantidade de filmes que varia de 5799 a 6002
